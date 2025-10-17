@@ -1,0 +1,6 @@
+Implementation notes and TODOs:
+
+- This backend intentionally keeps encryption logic on the client. Server only stores Nostr events (raw).
+- The chat endpoint is a naive example. For production use, build robust query patterns (e.g., index tags properly).
+- Consider migrating to Postgres (for full text search) or Turso/PlanetScale as discussed.
+- Add auth for admin/group endpoints; implement rate-limits and moderation tools.
